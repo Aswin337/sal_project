@@ -31,7 +31,7 @@ def add_bg_from_local(image_file):
          unsafe_allow_html=True
      )
 
-add_bg_from_local('background.jpg')  # ✅ Change to your image filename
+add_bg_from_local('1000057793.jpg')  # ✅ Change to your image filename
 st.title("Salary Prediction App")
 
 # Input fields
