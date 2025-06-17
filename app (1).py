@@ -15,6 +15,9 @@ import numpy as np
 model = pickle.load(open("salary_model.pkl", "rb"))
 import streamlit as st
 import base64
+import urllib.request
+image_url = "https://github.com/Aswin337/sal_project/raw/main/1000057793.jpg"
+urllib.request.urlretrieve(image_url, "1000057793.jpg")
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as file:
         encoded = base64.b64encode(file.read()).decode()
