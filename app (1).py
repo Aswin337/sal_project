@@ -37,6 +37,14 @@ def add_bg_from_local(image_file):
 add_bg_from_local('1000057793.jpg')  # ✅ Change to your image filename
 st.markdown(
     """
+    <audio controls>
+        <source src="https://raw.githubusercontent.com/Aswin337/sal_project/main/Ra%20Ra%20Rakkamma.mp3" type="audio/mpeg">
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
     <audio autoplay loop>
         <source src="https://raw.githubusercontent.com/Aswin337/sal_project/main/Ra%20Ra%20Rakkamma.mp3
 " type="audio/mpeg">
@@ -45,7 +53,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 st.title("Salary Prediction App")
 
 # Input fields
