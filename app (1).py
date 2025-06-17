@@ -38,7 +38,7 @@ add_bg_from_local('1000057793.jpg')  # ✅ Change to your image filename
 st.markdown(
     """
     <audio autoplay loop>
-        <source src="https://raw.githubusercontent.com/Aswin337/sal_project/99f32a2670c730a7548718c7de26aa81385bc56d/Ra%20Ra%20Rakkamma.mp3" type="audio/mpeg">
+        <source src="https://github.com/Aswin337/sal_project/blob/5c735df9c800ad9592f18ecdbb36f3ee018eb12d/Ra%20Ra%20Rakkamma.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     """,
