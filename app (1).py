@@ -13,7 +13,25 @@ import numpy as np
 
 # Load the trained model
 model = pickle.load(open("salary_model.pkl", "rb"))
+import streamlit as st
+import base64
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as file:
+        encoded = base64.b64encode(file.read()).decode()
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("data:image/jpg;base64,{encoded}");
+             background-size: cover;
+             background-attachment: fixed;
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
+add_bg_from_local('background.jpg')  # ✅ Change to your image filename
 st.title("Salary Prediction App")
 
 # Input fields
