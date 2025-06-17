@@ -53,6 +53,9 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+audio_file = open('Ra Ra Rakkamma.mp3', 'rb')
+audio_bytes = audio_file.read()
+st.audio(audio_bytes, format='audio/mp3', start_time=0)
 st.title("Salary Prediction App")
 
 # Input fields
